@@ -9,6 +9,7 @@ public class exercises {
         printTriangle(3);
         printIsoscelesTriangle();
         printDiamond();
+        printNamedDiamond();
     }
     private static void printOneAsterisk() {
         System.out.println("*");
@@ -75,6 +76,34 @@ public class exercises {
             System.out.println("");
         }
     }
+
+    private static void printNamedDiamond() {
+        int i,j,k;
+        for(i=1; i<=2; i++)
+        {
+            for(j=2; j>=i; j--)
+            {
+                System.out.print(" ");
+            }
+            for(k=1; k<=(2*i-1); k++) {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+        System.out.println("<Aday>");
+        for(i=2; i>=0; i--)
+        {
+            for(j=2; j>=i; j--)
+            {
+                System.out.print(" ");
+            }
+            for(k=1; k<=(2*i-1); k++) {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+    }
+
 }
 
 
